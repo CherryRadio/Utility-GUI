@@ -25,12 +25,12 @@ def lockstation():
         result_label.config(text=f"Error: {str(e)}")
 
 
-# This *should* possibly work since we've got "runas /noprofile /user:administrator" which may allow it to run without needing to open the .exe with admin
 def WinAudio():
     try:
-        cmd = 'runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"', shell=True)
+        cmd = 'runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"'
         os.system(cmd)
-        result_label.config(text=f"Audio Services restarted successfully: {str(e)}")
+        result_label.config(text=f"WinAudio restarted successfully")
+        result_label.grid(column=1,row=9)
     except Exception as e:
         result_label.config(text=f"Error: {str(e)}")
 
@@ -43,7 +43,7 @@ def update_prompt():
 # Create a basic tkinter window
 window = tk.Tk()
 window.title("Utility GUI")
-window.geometry("400x400")
+window.geometry("412x240")
 window.resizable(0,0)
 
 # Create a label to display results or errors
@@ -62,9 +62,9 @@ button4 = tk.Button(window, text="Lock PC", command=lockstation, width=15, heigh
 button5 = tk.Button(window, text="Restart Audio", command=WinAudio, width=15, height=2)
 
 # Pack the text prompt widgets
-prompt_label.grid(column=1, row=0)
-update_button.grid(column=1, row=2)
-prompt_entry.grid(column=1, row=1)
+prompt_label.grid(column=1, row=1)
+update_button.grid(column=1, row=3)
+prompt_entry.grid(column=1, row=2)
 
 # Set focus on the text entry and provide default text
 prompt_entry.insert(0, "Default Prompt")
@@ -79,7 +79,7 @@ button1.grid(column=0, row=3)
 button2.grid(column=0, row=4)
 button3.grid(column=0, row=5)
 button4.grid(column=0, row=6)
-button5.grid(column=1, row=3)
+button5.grid(column=2, row=3)
 
 
 result_label.grid()
