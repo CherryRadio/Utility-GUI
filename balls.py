@@ -26,7 +26,7 @@ def lockstation():
 
 def WinAudio():
     try:
-        subprocess.run(args='net stop audiosrv && net start audiosrv', shell=True)
+        cmd = 'runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"', shell=True)
         result_label.config(text=f"Audio Services restarted successfully: {str(e)}")
     except Exception as e:
         result_label.config(text=f"Error: {str(e)}")
