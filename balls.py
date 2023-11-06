@@ -27,7 +27,7 @@ def lockstation():
 
 def WinAudio():
     try:
-        cmd = 'runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"' (shell=True)
+        cmd = ('runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"')
         os.system(cmd)
         result_label.config(text=f"WinAudio restarted successfully")
         result_label.grid(column=1,row=9)
