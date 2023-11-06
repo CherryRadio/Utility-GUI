@@ -1,5 +1,6 @@
 import tkinter as tk
 import subprocess
+import os
 
 def clean_temp_folder():
     try:
