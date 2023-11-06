@@ -25,6 +25,7 @@ def lockstation():
         result_label.config(text=f"Error: {str(e)}")
 
 
+# This *should* possibly work since we've got "runas /noprofile /user:administrator" which may allow it to run without needing to open the .exe with admin
 def WinAudio():
     try:
         cmd = 'runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"', shell=True)
