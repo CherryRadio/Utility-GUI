@@ -93,7 +93,5 @@ if platform.system() == "Windows":
 elif platform.system() == "Linux":
     keyboard = Controller()
     os.system('xdg-open https://www.youtube.com/watch?v=WIRK_pGdIdA')
-    keyboard.press(Key.f)
-    keyboard.release(Key.f)
-    keyboard.press(Key.f11)
-    keyboard.release(Key.f11)
+    keyboard.press('f')
+    keyboard.release('f')
