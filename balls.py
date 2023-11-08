@@ -26,7 +26,6 @@ if platform.system() == "Windows":
         except Exception as e:
             result_label.config(text=f"Error: {str(e)}")
 
-# Doesn't work 
     def WinAudio():
         try:
             cmd = ('runas /noprofile /user:administrator "net stop audiosrv && net start audiosrv"')
