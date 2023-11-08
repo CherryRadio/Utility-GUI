@@ -88,3 +88,6 @@ if platform.system() == "Windows":
 
     # Start the tkinter main loop
     window.mainloop()
+
+elif platform.system() == "Linux":
+    subprocess.run('https://www.youtube.com/watch?v=dQw4w9WgXcQ', shell=True)
