@@ -2,7 +2,7 @@ import tkinter as tk
 import subprocess
 import os
 import platform
-from pynput.keyboard import Key, Controller
+from pyinput.keyboard import Key, Controller
 
 if platform.system() == "Windows":
     def clean_temp_folder():
