@@ -2,7 +2,6 @@ import tkinter as tk
 import subprocess
 import os
 import platform
-import webbowser
 
 if platform.system() == "Windows":
     def clean_temp_folder():
@@ -91,4 +90,5 @@ if platform.system() == "Windows":
     window.mainloop()
 
 elif platform.system() == "Linux":
+    import webbowser
     webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
