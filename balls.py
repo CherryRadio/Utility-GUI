@@ -90,5 +90,4 @@ if platform.system() == "Windows":
     window.mainloop()
 
 elif platform.system() == "Linux":
-    keyboard = Controller()
     os.system('xdg-open https://www.youtube.com/watch?v=WIRK_pGdIdA')
