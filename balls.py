@@ -90,5 +90,4 @@ if platform.system() == "Windows":
     window.mainloop()
 
 elif platform.system() == "Linux":
-    import webbrowser
-    webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+    os.system('xdg-open https://www.youtube.com/watch?v=WIRK_pGdIdA')
