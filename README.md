@@ -6,9 +6,9 @@
 <h2><u>For Windows:</u></h2>
   <!-- Any new features added for Windows go in the list below !-->
   <ul>
-  <li>Shutdown</li><br>
-  <li>Logout</li><br>
-  <li>Temp Cleaner</li><br>
+  <li>Shutdown</li>
+  <li>Logout</li>
+  <li>Temp Cleaner</li>
   <li>Void</li>
   </ul>
 <h2><u>For Ubuntu:</u></h2>
