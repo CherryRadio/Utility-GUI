@@ -11,8 +11,8 @@
   <li>Temp Cleaner</li>
   <li>Void</li>
   </ul>
-<h2><u>For Ubuntu:</u></h2>
-  <!-- Any new features added for Ubuntu go in the list below !-->
+<h2><u>For Linux:</u></h2>
+  <!-- Any new features added for Linux go in the list below !-->
   <ul>
   <li>Chip</li>
   </ul>
