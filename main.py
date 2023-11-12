@@ -3,7 +3,6 @@ import tkinter as tk
 import subprocess
 import os
 import platform
-from tkinter.ttk import *
 
 if platform.system() == "Windows":
     def clean_temp_folder():
@@ -36,8 +35,7 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    icon = PhotoImage(file = "https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico")
-    window.iconphoto(False, icon)
+    window.iconbitmap("icon.ico")
     window.title("Utility GUI")
     window.geometry("412x240")
     window.resizable(0,0)
