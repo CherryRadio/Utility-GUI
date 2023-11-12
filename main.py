@@ -3,9 +3,6 @@ import tkinter as tk
 import subprocess
 import os
 import platform
-import requests
-from io import BytesIO
-from PIL import Image
 
 if platform.system() == "Windows":
     def clean_temp_folder():
@@ -38,11 +35,6 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    # create image from URL
-    rsp = requests.get('https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico')
-    pilimage = Image.open(BytesIO(rsp.content)).convert("RGBA")
-    icon = tk.PhotoImage(file= pilimage)
-    window.iconbitmap(False, icon)
     window.title("Utility GUI")
     window.geometry("412x240")
     window.resizable(0,0)
