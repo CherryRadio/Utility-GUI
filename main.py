@@ -35,10 +35,6 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    urllib.request.urlretrieve( 
-  'https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico', 
-   "icon.ico") 
-  
     icon = Image.open("icon.ico") 
     window_icon = tk.PhotoImage(file= icon)
     window.iconbitmap(False, icon)
