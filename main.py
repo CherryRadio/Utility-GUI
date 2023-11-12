@@ -3,6 +3,8 @@ import tkinter as tk
 import subprocess
 import os
 import platform
+import Pillow
+from PIL import Image 
 
 if platform.system() == "Windows":
     def clean_temp_folder():
@@ -35,8 +37,6 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    from PIL import Image 
-  
     urllib.request.urlretrieve( 
   'https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico', 
    "icon.ico") 
