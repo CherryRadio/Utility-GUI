@@ -3,8 +3,8 @@ import tkinter as tk
 import subprocess
 import os
 import platform
-from io import BytesIO
 import requests
+from io import BytesIO
 from PIL import Image
 
 if platform.system() == "Windows":
