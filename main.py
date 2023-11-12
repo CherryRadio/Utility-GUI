@@ -3,6 +3,7 @@ import tkinter as tk
 import subprocess
 import os
 import platform
+from tkinter.ttk import *
 
 if platform.system() == "Windows":
     def clean_temp_folder():
