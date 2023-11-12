@@ -1,7 +1,6 @@
 import urllib.request
-import tkinter as tk
-import subprocess
-import platform
+import customtkinter
+
 
 code = 'https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/main.py'
 
