@@ -35,7 +35,14 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    icon = tk.PhotoImage(file= "https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico")
+    from PIL import Image 
+  
+    urllib.request.urlretrieve( 
+  'https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico', 
+   "icon.ico") 
+  
+    icon = Image.open("icon.ico") 
+    window_icon = tk.PhotoImage(file= icon)
     window.iconbitmap(False, icon)
     window.title("Utility GUI")
     window.geometry("412x240")
