@@ -35,8 +35,7 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    icon = Image.open("icon.ico") 
-    window_icon = tk.PhotoImage(file= icon)
+    icon = tk.PhotoImage(file= "icon.ico")
     window.iconbitmap(False, icon)
     window.title("Utility GUI")
     window.geometry("412x240")
