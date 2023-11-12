@@ -35,7 +35,7 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    icon = tk.PhotoImage(file= "icon.ico")
+    icon = tk.PhotoImage(file= "https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico")
     window.iconbitmap(False, icon)
     window.title("Utility GUI")
     window.geometry("412x240")
