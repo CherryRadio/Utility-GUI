@@ -36,7 +36,7 @@ if platform.system() == "Windows":
     # Create a basic tkinter window
     window = customtkinter.CTk()
     window.title("Utility GUI")
-    image = PhotoImage(file = 'info.png')
+    image = tk.PhotoImage(file = 'info.png')
     window.iconphoto(False, image)
     window.geometry("412x240")
     window.resizable(0,0)
