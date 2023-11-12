@@ -3,6 +3,9 @@ import tkinter as tk
 import subprocess
 import os
 import platform
+from io import BytesIO
+import requests
+from PIL import Image
 
 if platform.system() == "Windows":
     def clean_temp_folder():
@@ -35,7 +38,10 @@ if platform.system() == "Windows":
 
     # Create a basic tkinter window
     window = customtkinter.CTk()
-    icon = tk.PhotoImage(file= "https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico")
+    # create image from URL
+    rsp = requests.get('https://raw.githubusercontent.com/CherryRadio/Utility-GUI/main/icon.ico')
+    pilimage = Image.open(BytesIO(rsp.content)).convert("RGBA")
+    icon = tk.PhotoImage(file= pilimage)
     window.iconbitmap(False, icon)
     window.title("Utility GUI")
     window.geometry("412x240")
