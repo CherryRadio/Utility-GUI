@@ -11,10 +11,11 @@
   <li>Temp Cleaner</li>
   <li>Void</li>
   </ul>
-<h2><u>For Linux:</u></h2>
+<!--
+<h2><u>For Linux:</u></h2> !-->
   <!-- Any new features added for Linux go in the list below !-->
   <ul>
-  <li>Chip</li>
+  <!-- <li>Chip</li> !-->
   </ul>
 </body>
 </html>
